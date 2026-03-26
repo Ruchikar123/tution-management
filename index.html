@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coaching Institute</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: #f5f7fa;
+}
+
+/* 🔝 Header */
+.header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* 🔘 Buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 15px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 8px;
+}
+
+.auth-buttons a:hover {
+    background: #4338ca;
+}
+
+/* 📢 Scrolling slogan */
+.marquee {
+    background: #1e293b;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 12s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* 📦 Section */
+.section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* 🏫 Image */
+.section img {
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* 📚 Subjects */
+.subjects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 👩‍🏫 Faculty Scroll */
+.faculty-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.faculty {
+    min-width: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.faculty img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 🏆 Achievers */
+.achievers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.achiever {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* 📞 Contact */
+.contact {
+    background: #1e293b;
+    color: white;
+    padding: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- 🏫 HEADER -->
+<div class="header">
+    <div class="logo">ABC Coaching Institute</div>
+    <p>Empowering Students for a Better Future</p>
+</div>
+
+<!-- 🔘 LOGIN / REGISTER -->
+<div class="auth-buttons">
+    <a href="login.php">Login</a>
+    <a href="register.php">Register</a>
+</div>
+
+<!-- 📢 SLOGAN -->
+<div class="marquee">
+    <span>📚 Learn Today, Lead Tomorrow | 🎯 Quality Education for Everyone | 🚀 Build Your Future With Us</span>
+</div>
+
+<!-- 🏫 ABOUT -->
+<div class="section">
+    <h2>About Our Institution</h2>
+    <p>
+        ABC Coaching Institute provides high-quality education with expert faculty,
+        modern teaching techniques, and excellent student support.
+    </p>
+
+    <img src="https://source.unsplash.com/800x400/?college,classroom">
+</div>
+
+<!-- 📚 SUBJECTS -->
+<div class="section">
+    <h2>Our Subjects</h2>
+    <div class="subjects">
+        <div class="subject">Mathematics</div>
+        <div class="subject">Physics</div>
+        <div class="subject">Chemistry</div>
+        <div class="subject">Biology</div>
+        <div class="subject">Computer Science</div>
+    </div>
+</div>
+
+<!-- 👩‍🏫 FACULTY -->
+<div class="section">
+    <h2>Our Faculty</h2>
+
+    <div class="faculty-container">
+        <div class="faculty">
+            <img src="https://source.unsplash.com/200x200/?teacher">
+            <h4>Mr. Sharma</h4>
+            <p>M.Sc Mathematics</p>
+        </div>
+
+        <div class="faculty">
+            <img src="https://source.unsplash.com/200x200/?professor">
+            <h4>Ms. Priya</h4>
+            <p>M.Sc Physics</p>
+        </div>
+
+        <div class="faculty">
+            <img src="https://source.unsplash.com/200x200/?teacher,man">
+            <h4>Mr. Raj</h4>
+            <p>MCA</p>
+        </div>
+    </div>
+</div>
+
+<!-- 🏆 ACHIEVERS -->
+<div class="section">
+    <h2>Our Achievers</h2>
+
+    <div class="achievers">
+        <div class="achiever">Ravi - 95%</div>
+        <div class="achiever">Sneha - 92%</div>
+        <div class="achiever">Arjun - 94%</div>
+    </div>
+</div>
+
+<!-- 📞 CONTACT -->
+<div class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Davangere, Karnataka</p>
+    <p>📞 +91 9876543210</p>
+    <p>📧 abc@coaching.com</p>
+</div>
+
+</body>
+</html>

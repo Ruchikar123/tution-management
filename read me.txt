@@ -1,0 +1,7 @@
+For the user login
+Email: user@gmail.com
+Password: user123
+
+For admin login
+Email: admin@gmail.com 
+Password: admin123
